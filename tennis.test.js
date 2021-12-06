@@ -19,5 +19,11 @@ describe('score', function () {
         scoreShouldBe('fifteen love');
     });
 
+    it('should be thirty love', function () {
+        tennis.firstPlayerScore();
+        scoreShouldBe('fifteen love');
+    });
+
+
 
 });
