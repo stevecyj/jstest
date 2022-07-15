@@ -1,10 +1,10 @@
-import {Tennis} from "./tennis";
+import {Tennis1} from "./tennis-1";
 
 describe('score', function () {
-    let tennis = new Tennis();
     beforeEach(() => {
-        tennis = new Tennis();
+        tennis = new Tennis1();
     });
+        let tennis = new Tennis1();
 
     function scoreShouldBe(expected) {
         expect(tennis.score()).toBe(expected);
@@ -13,11 +13,4 @@ describe('score', function () {
     it('should be love all', function () {
         scoreShouldBe('love all');
     });
-
-    it('should be fifteen love', function () {
-        tennis.firstPlayerScore();
-        scoreShouldBe('fifteen love');
-    });
-
-
 });
