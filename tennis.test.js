@@ -20,4 +20,13 @@ describe('score', function () {
     });
 
 
+    it('should be thirty love', function () {
+        tennis.firstPlayerScore();
+        tennis.firstPlayerScore();
+        scoreShouldBe('thirty love');
+    });
+
+
+
+
 });

@@ -4,12 +4,10 @@ export class Tennis {
     score() {
         let scoreLookup = {
             1: 'fifteen',
+            2: 'thirty',
         }
-        if (this.firstPlayerScoreTimes === 2) {
-            return 'thirty love';
-        }
-        if (this.firstPlayerScoreTimes === 1) {
-            return `${scoreLookup[this.firstPlayerScoreTimes]} love`
+        if (this.firstPlayerScoreTimes === 2 || this.firstPlayerScoreTimes === 1) {
+            return `${scoreLookup[this.firstPlayerScoreTimes]} love`;
         }
         return 'love all';
     }
